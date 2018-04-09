@@ -18,7 +18,9 @@
           <label>Allow Registration</label>
           <input type="checkbox" name="allowRegistration" [checked]="settings.allowRegistration" (change)="settings.allowRegistration = !settings.allowRegistration">
         </div>
-          <input type="submit" value="Submit" class="btn btn-primary btn-block">
+        <div class="form-group">
+          <button type="submit" value="Submit" class="btn btn-info btn-sm btn-block"><i class="fa fa-floppy-o"></i> Save Settings</button>
+        </div>
       </form>
     </div>
   </div>
