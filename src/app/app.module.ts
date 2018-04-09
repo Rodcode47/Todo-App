@@ -7,6 +7,8 @@ import { FlashMessagesModule } from 'angular2-flash-messages';
 import { NgRedux, NgReduxModule } from '@angular-redux/store';
 import { IAppState, rootReducer, INITIAL_STATE } from './store';
 
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
@@ -53,7 +55,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     AngularFirestoreModule,
     AngularFireAuthModule
   ],
-  providers: [AuthService, TodoService, SettingsService],
+  providers: [AuthService, TodoService, SettingsService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule {
