@@ -3,6 +3,9 @@ import {CanActivate, Router } from '@angular/router';
 import { AngularFireAuth, AngularFireAuthProvider } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
 import { Observable } from 'rxjs/Observable';
+import { AngularFirestore } from 'angularfire2/firestore';
+import { FirebaseAppProvider } from 'angularfire2';
+import { GoogleAuthProvider, TwitterAuthProvider, GithubAuthProvider } from '@firebase/auth-types';
 
 @Injectable()
 export class AuthService {
