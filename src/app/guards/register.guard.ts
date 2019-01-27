@@ -17,7 +17,8 @@ export class RegisterGuard implements CanActivate {
     if(this.settingsService.getSettings().allowRegistration) {
       return true;
     } else {
-      this.router.navigate(['/login']);
+      this.router.navigate(['/']);
+      //this.router.navigate(['/login']);
       return false;
     }
   }

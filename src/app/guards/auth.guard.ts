@@ -17,7 +17,8 @@ export class AuthGuard implements CanActivate {
     return this.afAuth.authState.map(auth => {
       // tslint:disable-next-line:whitespace
       if(!auth) {
-        this.router.navigate(['/login']);
+        this.router.navigate(['/']);
+        //this.router.navigate(['/login']);
         return false;
       } else {
         return true;
