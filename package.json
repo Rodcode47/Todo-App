@@ -1,10 +1,10 @@
 {
   "name": "ng6-todo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "engine": {
-    "node": ">= 11.7.0",
-    "npm": ">= 6.5.0"
+    "node": "10.3.0",
+    "npm": "6.x"
   },
   "scripts": {
     "ng": "ng",
