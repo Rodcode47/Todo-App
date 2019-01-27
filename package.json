@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "engine": {
-    "node": "9.11.1",
-    "npm": "5.8.0"
+    "node": ">=8.0.0 <11.0.0",
+    "npm": ">= 5.8.0"
   },
   "scripts": {
     "ng": "ng",
@@ -12,7 +12,6 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --prod",
     "start": "node server.js"
   },
   "private": true,
